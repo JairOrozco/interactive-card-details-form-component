@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    width: 30%;
+    height: 100vh;
+    margin: 0;
+    margin-bottom: 0;
+    background-image: url('../assets/bg-main-desktop.png');
+    background-size: cover;
+    &__container-cardReverse {
+        width: 460px;
+        height: 342.5px;
+        top: calc(55%);//550px;
+        left: calc(70%);
+        .cardReverse__cvc {
+            top: 113px;
+            right: 55px;
+            font-size: 1.8rem;
+        }
+    }
+    &__container-cardFront {
+        width: 460px;
+        height: 342.5px;
+        top: calc(25%);
+        left: calc(50%);
+        padding: 30px;
+        .cardFront__containerLogo {
+            width: 90px;
+        }
+        .cardFront__containerNumberCard {
+            bottom: -60px;
+            p {
+                font-size: 3.2rem;
+                letter-spacing: 3px;
+            }
+        }
+        .cardFront__containerNameMonthYearCard {
+            bottom: -75px;
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+// Estilos que aplican a todos los contenedores del formulario
+.settingsDivForm {
+    margin-bottom: 20px;
+    label {
+        font-size: 1.4rem;
+    }
+    input {
+        height: 45px;
+        font-size: 1.6rem;
+    }
+    input:hover {
+        cursor: pointer;
+    }
+    input:focus {
+        border: 2px solid hsl(278, 94%, 30%);
+    }
+    p {
+        margin-top: 7px;
+        font-size: 1.4rem;
+    }
+    
+}
+
+.main {
+    position: absolute;
+    top: calc(35%);//350px;
+    left: calc(65%);//1200px;
+
+    .form {
+        width: 375px;
+        &__submitButton {
+            height: 50px;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .formSended {
+        width: 375px;
+        margin-bottom: 0;
+        .formSended__container-img {
+            width: 100px;
+            margin-bottom: 40px;
+        }
+        .formSended__h2 {
+            margin-bottom: 30px;
+            font-size: 3rem;
+        }
+        .formSended__text {
+            margin-bottom: 35px;
+            font-size: 1.8rem;
+        }
+        .formSended__buttonContinue {
+            height: 50px;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" media="(min-width: 1440px)" href="src/css/styles-1200.css" />
+    <title>Interactive Card</title>
+</head>
+<body>
+    <header class="header">
+        
+        <div class="header__container-cardReverse">
+            <p id="cvcNumberCardReverse" class="cardReverse__cvc"></p>
+        </div>
+
+        <div class="header__container-cardFront">
+            <figure class="cardFront__containerLogo">
+                <img src="src/assets/card-logo.svg" alt="">
+            </figure>
+            <div class="cardFront__containerNumberCard">
+                <p id="cardFrontNumber" class="cardFront__number"></p>
+            </div>
+            <div class="cardFront__containerNameMonthYearCard">
+                <p id="cardFrontName" class="cardFront__name"></p>
+                <div class="cardFront__containerMonthYear">
+                    <p id="cardFrontMonth" class="cardFront__month"></p>
+                    <p>/</p>
+                    <p id="cardFrontYear" class="cardFront__year"></p>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Formulario -->
+    <main class="main">
+        <form id="form" class="form">
+
+            <section id="containerCardName" class="form__container-cardName settingsDivForm">
+                <label class="form__label-cardName" for="cardName">
+                    Cardholder Name
+                </label>
+                <input id="cardName" class="form__input-cardName" type="text" autocomplete="off" placeholder="e.g Jane Appleseed">
+                <p id="requireCardName" class=" inactive">* Require</p>
+            </section>
+            
+            <section class="form__container-cardNumber settingsDivForm">
+                <label class="form__label-cardNumber" for="cardNumber">
+                    Card Number
+                </label>
+                <input id="cardNumber" class="form__input-cardNumber" type="number" autocomplete="off" placeholder="e.g 1234 5678 9123 0000">
+                <p id="requireCardNumber" class=" inactive">* Require</p>
+                <p id="requireMax16Characters" class="inactive">*Max 16 characters</p>
+                <p id="requireMin16Characters" class="inactive">*Min 16 characters</p>
+            </section>
+            
+            <div class="form__container-cardInformation">
+                <section class="form__container-dateCard settingsDivForm">
+                    <label class="form__label-dateCard" for="monthCard">
+                        Exp. Date (mm/yy)
+                    </label>
+                    <input id="monthCard" class="form__input-monthCard" type="number" placeholder="mm">
+                    <input id="yearCard" class="form__input-yearCard" type="number" autocomplete="off" placeholder="yy">
+                    <p id="requireMonthYear" class=" inactive">* Require</p>
+                    <p id="requireMonth1to12" class="inactive">*Num 01-12</p>
+                    <p id="requireYear22to28" class="inactive">*Invalid year</p>
+                </section>
+    
+                <section class="form__container-cvcCard settingsDivForm">
+                    <label class="form__label-cvc" for="cvcCardNumber">
+                        cvc
+                    </label>
+                    <input id="cvcCardNumber" class="form__input-cvcCard" type="number" autocomplete="off" placeholder="e.g 123">
+                    <p id="requireCvcNumber" class="inactive">* Require</p>
+                    <p id="requireMax3Numbers" class="inactive">*Max 3 numbers</p>
+                    <p id="requireMin3Numbers" class="inactive">*Min 3 numbers</p>
+                </section>
+            </div>
+
+            <button id="submitButton" class="form__submitButton " type="button">Confirm</button>
+
+        </form>
+
+        <!-- Seccion que se muestra al enviar el formulario -->
+        <section id="sectionFormSended" class="formSended inactive">
+            <figure class="formSended__container-img">
+                <img src="src/assets/icon-complete.svg" alt="">
+            </figure>
+
+            <h2 class="formSended__h2">Thank you!</h2>
+
+            <p class="formSended__text">We´ve added your card details</p>
+
+            <button id="continueButton" class="formSended__buttonContinue">Continue</button>
+        </section>
+
+    </main>
+
+    <script src="src/dist/main.js"></script>
+</body>
+</html>

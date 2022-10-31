@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:root {
+  font-size: 62.5%; }
+
+.header {
+  width: 100%;
+  height: 215px;
+  position: relative;
+  margin-bottom: 80px;
+  user-select: none;
+  background-image: url("../assets/bg-main-mobile.png"); }
+  .header__container-cardReverse {
+    width: 260px;
+    height: 142.5px;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    background-image: url("../assets/bg-card-back.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .header__container-cardReverse .cardReverse__cvc {
+      position: absolute;
+      top: 64px;
+      right: 32px;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: white; }
+  .header__container-cardFront {
+    width: 260px;
+    height: 142.5px;
+    position: absolute;
+    top: 115px;
+    left: 25px;
+    padding: 20px;
+    background-image: url("../assets/bg-card-front.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .header__container-cardFront .cardFront__containerLogo {
+      width: 50px; }
+      .header__container-cardFront .cardFront__containerLogo img {
+        width: 100%; }
+    .header__container-cardFront .cardFront__containerNumberCard {
+      width: 100%;
+      display: flex;
+      position: relative;
+      bottom: -25px; }
+      .header__container-cardFront .cardFront__containerNumberCard p {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 2px; }
+    .header__container-cardFront .cardFront__containerNameMonthYearCard {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      bottom: -40px; }
+      .header__container-cardFront .cardFront__containerNameMonthYearCard p {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 1px; }
+      .header__container-cardFront .cardFront__containerNameMonthYearCard .cardFront__containerMonthYear {
+        display: flex; }
+
+.main {
+  padding: 0 25px; }
+
+.settingsDivForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px; }
+  .settingsDivForm .borderErrors {
+    border: 1px solid #ff5252; }
+  .settingsDivForm label {
+    width: 100%;
+    padding-bottom: 5px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    user-select: none; }
+  .settingsDivForm input {
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid #dedddf;
+    border-radius: 7px;
+    outline: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.4rem; }
+  .settingsDivForm input:focus {
+    border: 1.5px solid #600594; }
+  .settingsDivForm input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    opacity: .6; }
+  .settingsDivForm p {
+    margin-top: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    color: red; }
+
+.form {
+  width: 100%;
+  margin-bottom: 35px; }
+  .form__container-cardName .form__input-cardName {
+    width: 100%; }
+  .form__container-cardName .form__input-cardName::placeholder {
+    letter-spacing: 1.5px; }
+  .form__container-cardNumber .form__input-cardNumber {
+    width: 100%; }
+  .form__container-cardNumber .form__input-cardNumber::placeholder {
+    letter-spacing: 1.5px; }
+  .form__container-cardInformation {
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px; }
+    .form__container-cardInformation .form__container-dateCard {
+      width: 50%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 0; }
+      .form__container-cardInformation .form__container-dateCard .form__input-monthCard {
+        width: 70px;
+        padding: 0;
+        text-align: center; }
+      .form__container-cardInformation .form__container-dateCard .form__input-monthCard::placeholder {
+        text-transform: uppercase; }
+      .form__container-cardInformation .form__container-dateCard .form__input-yearCard {
+        width: 70px;
+        margin-left: 5px;
+        padding: 0;
+        text-align: center; }
+      .form__container-cardInformation .form__container-dateCard .form__input-yearCard::placeholder {
+        text-transform: uppercase; }
+    .form__container-cardInformation .form__container-cvcCard {
+      width: 50%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 0; }
+      .form__container-cardInformation .form__container-cvcCard .form__input-cvcCard {
+        width: 100%; }
+  .form__submitButton {
+    width: 100%;
+    height: 40px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    color: white;
+    user-select: none;
+    background: #21092f; }
+
+.formSended {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+  user-select: none; }
+  .formSended .formSended__container-img {
+    width: 70px;
+    margin-bottom: 30px; }
+    .formSended .formSended__container-img img {
+      width: 100%; }
+  .formSended .formSended__h2 {
+    margin-bottom: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase; }
+  .formSended .formSended__text {
+    margin-bottom: 40px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #8e8593;
+    opacity: .8; }
+  .formSended .formSended__buttonContinue {
+    width: 100%;
+    height: 40px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    color: white;
+    background: #21092f; }
+
+.inactive {
+  display: none; }
